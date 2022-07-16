@@ -37,3 +37,7 @@ matrix3, tf.transpose(matrix3), tf.reshape(matrix3, [3,2])
 
 #try matrix multiplication with transpose rathar tha reshape
 tf.matmul(matrix1, tf.transpose(matrix3))
+
+
+#matrix multiplications can too be performed with tf.tensordot()
+tf.tensordot(matrix1, tf.transpose(matrix3), axes=1)
